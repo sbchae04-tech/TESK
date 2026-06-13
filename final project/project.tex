@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+
+\usepackage{kotex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\begin{center}
+고급물리 기말 프로젝트
+\end{center}
+
+\begin{flushright}
+2023017030 채서병
+\end{flushright}
+
+1. Henon Map
+
+\begin{equation}
+\begin{cases}
+x_{n+1}=1-a x_n^2+y_n\\
+y_{n+1}=b x_{n}
+\end{cases}
+\end{equation}
+
+\vspace{1em}
+
+1.1 Dissipative system 
+\begin{equation}
+J = \begin{vmatrix}
+    -2ax_n & 1 \\ b & 0
+\end{vmatrix}
+\end{equation}
+
+|det J| = b 일때, -1 < b <1 이라면 넓이가 감소하기 때문에 소산계(dissipative system)이다.
+
+\vspace{1em}
+
+1.2 Fixed points
+
+해논 맵에서 각 고정점을 구하면
+\begin{equation}
+    \begin{cases}
+        x^* = 1-a (x^*)^2 + y^* = 1 - a (x^*)^2 + b x^*\\
+        y^* = b x^*
+    \end{cases}
+\end{equation}
+
+식 (3)을 정리하여 \(x^*\)을 구하면
+
+\begin{equation}
+    x^* = \frac{(b-1) \pm \sqrt{(1-b)^2 + 4a}}{2a}
+\end{equation}
+
+이므로 \((x^*, y^*)\)을 구하면
+
+\begin{equation}
+    (x^*_{\pm}, y^*_{\pm}) =-(\frac{(b-1) \pm \sqrt{(1-b)^2 + 4a}}{2a}, b\frac{(b-1) \pm \sqrt{(1-b)^2 + 4a}}{2a})
+\end{equation}
+
+이때, 실수 고정점이 존재하기 위해서는 판별식이 0 이상이어야 함으로
+\begin{equation}
+    (1-b)^2 + 4a \ge 0
+\end{equation}
+
+\begin{equation}
+    \therefore a \ge \frac{-(1-b)^2}{4}
+\end{equation}
+
+이다. 
+
+\vspace{1em}
+
+이제 선형성을 통하여 분석을 하자면 식 (2)의 야고비안에서 고정점을 대입하여 행렬식을 구하면 
+\begin{equation}
+J = \begin{vmatrix}
+    -2ax^* - \lambda & 1 \\ b & -\lambda
+\end{vmatrix}
+\end{equation}
+
+이를 통하여 구한 특성 방정식은 
+\begin{equation}
+    \lambda^2 + 2ax^*\lambda -b = 0
+\end{equation}
+이며, 고정값은
+\begin{equation}
+    \lambda_{\pm} = -ax^* \pm \sqrt{a^2(x^*)^2 + b}
+\end{equation}
+이다.
+
+\vspace{1em}
+
+여기서 나온 두 고유값에 대하여 \(|\lambda_1|<1,\  |\lambda_2|<1\)이라는 조건을 만족해야 함으로 b의 조건 또한 \(-1<b<1\)이라는 조건과 
+\(|2ax^*| < 1-b\)의 조건을 만족 해야한다.
+
+\vspace{1em}
+
+\(D = \sqrt{(1-b)^2 + 4a}\)라 할때 식 (4)를 이용하여 \(2a x^*_{\pm} = b-1 \pm D\)를 구할 수 있다.
+이때 b가 \(-1< b < 1\)에서 \(x^*_{-}\)는 항상 불안정 하다. 반면 \(x^*_+\)는 \(\frac{-(1-b)^2}{4} < a < \frac{3(1-b)^2}{4}\)
+일때 안정이다. 
+
+
+
+\end{document}
