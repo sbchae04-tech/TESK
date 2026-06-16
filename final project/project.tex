@@ -1,4 +1,8 @@
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
 
 \usepackage{graphicx}
 \usepackage{kotex}
@@ -107,7 +111,7 @@ J = \begin{vmatrix}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{graph_HenonMap.png}
-\caption{Python으로 그린 그래프}
+\caption{Henon Map 에서 a=1.4,  b=0.3일때의 그래프를 나타낸다.}
 \label{fig:graph}
 \end{figure}
 
@@ -117,8 +121,43 @@ J = \begin{vmatrix}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{graph_Bif.png}
-\caption{Python으로 그린 그래프}
-\label{fig:graph}
+\caption{b=0.3일때 a값에 따른 $x_n$의 갈래치기를 나타낸 그래프이다.}
+\label{fig:graph_2}
 \end{figure}
+
+1.5 Chaos and Fractals
+
+교재에서는 헤논맵에서 발생하는 카오스와 헤넌 어프렉터의 프렉탈 구조를 하나의 직사각형이 구부러지는 형태로 분석을 하였다.
+\begin{figure}[H]
+\centering
+
+\begin{subfigure}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{square.png}
+    \caption{초기 사각형}
+    \label{fig:square}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{square_Fold.png}
+    \caption{접힘 변환}
+    \label{fig:square_fold}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{square_axis.png}
+    \caption{축 변환 후 형태}
+    \label{fig:square_axis}
+\end{subfigure}
+
+\caption{해논맵에서 사각형 영역이 접히고 수축되는 과정을 나타낸 그림이다.}
+\label{fig:henon_square_transform}
+\end{figure}
+
+위 figure 3처럼 사각형을 휘고 돌리는 과정을 반복하면서 프렉탈 구조처럼 나타난다.
+이 과정을 반복하면 그림 \ref{fig:graph}과 같은 형태로 그려지게 된다.
+
 
 \end{document}
