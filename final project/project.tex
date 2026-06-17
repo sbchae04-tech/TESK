@@ -3,7 +3,6 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{subcaption}
-
 \usepackage{graphicx}
 \usepackage{kotex}
 \usepackage{amsmath}
@@ -160,6 +159,7 @@ J = \begin{vmatrix}
 이 과정을 반복하면 그림 \ref{fig:graph}과 같은 형태로 그려지게 된다.
 
 \newpage
+\setcounter{equation}{0}
 
 2. Analysis of the Dynamics near an Undefined Fixed Point via the Blow-Up Technique
 
@@ -177,5 +177,14 @@ J = \begin{vmatrix}
 그렇기에 이 프로젝트에서 Blow-Up이라는 기법을 이용하여 직교좌표계에서 극좌표게 또는 구면 좌표계로 변환 후 특이점에 대한 분석을 하고자 한다.
 
 공간을 정의하면
+\begin{equation}
+    \begin{cases}
+        \dot{x} = P(x, y) = P_{m}(x, y) + ...\\
+        \dot{y} = Q(x, y) = Q_{m}(x, y) + ...
+    \end{cases}
+\end{equation}
+
+이때 P와 Q는 서로소 다항식이며, \(P_{m}\), \(Q_{m}\) 은 등방성 다항식이며 이때 \(m \in \mathbb{N}\)이다.
+
 
 \end{document}
