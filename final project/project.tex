@@ -218,5 +218,92 @@ J = \begin{vmatrix}
 이 경우는 앞서 말했듯이 한 점에 대해서 특정 방향에서 들어오는 non-dicritical singular point 이다.
 이 경우에는 원점에서의 해곡선은 아무 방향을 가질 수는 없다. 즉, 특정한 방향 \(F(\theta)=0\)을 만족해야 한다는 것이며, 이때 \(F(\theta^*)=0\)을 만족하는 \(\theta^*\)를 특성 방향이라 한다.
 
+\begin{figure}[H]
+\centering
+
+\begin{subfigure}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Original_system.png}
+    \caption{초기 x-y 평면에서의 동역학}
+    \label{fig:Original}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Blow-Up_system.png}
+    \caption{Blow-Up기법을 이용한 x-z평면에서의 동역학}
+    \label{fig:Blow-Up}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Return_system.png}
+    \caption{Blow-Down을 이용하여 평면 이동}
+    \label{fig:Return}
+\end{subfigure}
+\caption{\(F \not \equiv 0\)일때의 Blow-Up 예시}
+\label{fig:F_not_0_system}
+\end{figure}
+
+Figure 4는 \(F \not \equiv 0\)일때의 그래프로 해석방식을 설명하자면
+\begin{equation}
+    F(x, y) = xQ_{m} - yP_{m}
+\end{equation}
+을 계산한다. 그 후 \(F(\theta) = 0\) 즉, \(y=vx\)를 대입하여 기울기 v를 찾고,
+그 결과 나온 특성 방향은 \(\theta^* = arctan (v)\)이다.
+
+Blow-Up 이후 \(y = xz\) 즉 \(z=\frac{y}{x}\)이다. 여기서 원래 특이점이던 (0, 0)은 blow-up 후
+x=0이라는 exceptional divisor로 확장된다. blow-up 좌표계에서 원점으로 근사가 되면
+(0, v)로 점근하는 궤도와 대응된다는 것이다.
+
+\vspace{1em}
+
+다음은 \(F \equiv 0\)일때의 상황을 고려할 것이다. \(F \equiv xQ_{m}-yP_{m} \equiv 0 \)인 경우
+\(P_{m} = xW_{m-1}\), \(Q_{m} = yW_{m-1}\)이며, 여기서 \(W_{m-1} \not\equiv 0\)이다.
+
+\begin{figure}[H]
+\centering
+
+\begin{subfigure}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Original_system_2.png}
+    \caption{초기 x-y 평면에서의 동역학}
+    \label{fig:Original_2}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Blow-Up_system_z.png}
+    \caption{x축을 기준으로한 Blow-Up기법을 이용한 x-z평면에서의 동역학}
+    \label{fig:Blow-Up_z}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Blow-Up_system_y.png}
+    \caption{y축을 기준으로한 Blow-Up기법을 이용한 x-y평면에서의 동역학}
+    \label{fig:Blow-Up_y}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.32\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Blow-Down_system.png}
+    \caption{Blow-Down을 이용하여 평면 이동}
+    \label{fig:Return_2}
+\end{subfigure}
+\caption{\(F \equiv 0\)일때의 Blow-Up 예시}
+\label{fig:F_0_system}
+\end{figure}
+
+figure 5의 예시 그림을 해석하자면 \(F \equiv 0\)일 경우는 거의 모든 방향에서 특이점에 수렴 하거나 발산한다.
+그렇기에 \(F(\theta) = 0\)만으로는 방향을 구별할 수 없기에 \(W_{m-1}\)을 본다.
+만약 \(y-vx\) 가 \(W_{m-1}\)의 인수일 경우 \(\tan\theta^*\)이며, \(\theta^*\)는 singular direction이다.
+즉, \(F=0\)으로 특성 방향을 찾는것이 아닌 \(W_{m-1}\)으로 특이 방향을 찾는다.
+이후에 blow-down을 이용하여 x-y 평면으로 다시 이동시킨다.
+
+\vspace{1em}
+
+특이점이 있는 즉, 불연속적이거나, 정의가 안된 지점에 대해서 동역학을 분석할 수 있다.
+이러한 예시는 실제 물리학에서 싱크가 있는 지점이나 전자기학에서 부피가 있는 점전하 근처에서의 역학을 보다 잘 해석할 수 있다.
 
 \end{document}
