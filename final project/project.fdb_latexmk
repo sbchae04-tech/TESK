@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1781846732.60495 "c:/Users/cotjq/OneDrive/Desktop/python_code/TESK/final project/project.tex" "project.pdf" "project" 1781846736.3634 0
+["pdflatex"] 1781846951.99601 "c:/Users/cotjq/OneDrive/Desktop/python_code/TESK/final project/project.tex" "project.pdf" "project" 1781846955.70363 0
   "Blow-Down_system.png" 1781844609 133712 1e614e731b312fbd0e84c1cb6d49ca1d ""
   "Blow-Up_system.png" 1781843649 396989 8ce75c33ab4f256711b74d2ca6534038 ""
   "Blow-Up_system_y.png" 1781844608 416019 c172fa679fcc5dd5d921283534b61c80 ""
@@ -147,11 +147,11 @@
   "Original_system.png" 1781843646 703429 f4b6d34371f37e0072e158974262af31 ""
   "Original_system_2.png" 1781844604 667803 a86d1ae13c5370ff18a55683499ba707 ""
   "Return_system.png" 1781843650 199929 a524a0060659adff58874dfc4ea23711 ""
-  "c:/Users/cotjq/OneDrive/Desktop/python_code/TESK/final project/project.tex" 1781846730 11504 627091204335982741bb9dcf7a661654 ""
+  "c:/Users/cotjq/OneDrive/Desktop/python_code/TESK/final project/project.tex" 1781846946 11508 fc69f79011316b353da0c282ccec85d0 ""
   "graph_Bif.png" 1781334779 62774 422486c5f4aa04cf792116134f79fccb ""
   "graph_HenonMap.png" 1781334364 88867 96c7f5a6b9e6030c2a57576967ba1152 ""
-  "project.aux" 1781846735 2255 22314ee43ac9f94753c131636e96f5c4 "pdflatex"
-  "project.tex" 1781846730 11504 627091204335982741bb9dcf7a661654 ""
+  "project.aux" 1781846955 2255 22314ee43ac9f94753c131636e96f5c4 "pdflatex"
+  "project.tex" 1781846946 11508 fc69f79011316b353da0c282ccec85d0 ""
   "square.png" 1781711527 31402 8d9c8f29cc8d6e663d65bb67cb8b842c ""
   "square_Fold.png" 1781711527 77942 5cc78a142739da5fb6afeeda1a193f34 ""
   "square_axis.png" 1781711527 80126 9c425c5a3169066c33135bb9ff9a2d58 ""
